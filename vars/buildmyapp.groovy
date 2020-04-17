@@ -2,7 +2,7 @@
 def call(pipelineParams){
 
     
-    def buidVersion = ${pipelineParams.buidVersion}
+    def buidVersion = pipelineParams.buidVersion
 
     node{
       stage("sample"){
