@@ -6,9 +6,9 @@ def call(pipelineParams){
 
     node{
       stage("sample"){
-          println "sample stage from shared library $pipelineParams.buidVersion"
+          println "sample stage from shared library" pipelineParams.buidVersion
           
-          println "buidVersion: ${pipelineParams.buidVersion}"
+          println "buidVersion: " pipelineParams.buidVersion
       }
     }
 
