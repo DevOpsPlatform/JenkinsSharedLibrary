@@ -1,9 +1,9 @@
 
-def call(pipelineParams){
+def call(props){
 
     node{
       stage("sample"){
-          println "Sample stage from shared library $pipelineParams.buidVersion "
+          println "Sample stage from shared library $props.buidVersion "
       }
     }
 
