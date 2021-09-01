@@ -10,7 +10,7 @@ def call(props){
       stage("build"){
           println "Sample stage from shared library to build the code"
         
-          "/root/apache-maven-3.8.1/bin/mvn" clean install'
+          sh '"/root/apache-maven-3.8.1/bin/mvn" clean install'
       }
     }
 
