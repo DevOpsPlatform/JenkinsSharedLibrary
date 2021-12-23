@@ -9,6 +9,8 @@ def call(props){
       
       stage("build"){
           println "Sample stage from shared library to build the code: ${params.buidVersion}"
+          
+          def buidVersion = params.buidVersion
         
           //sh '"/root/apache-maven-3.8.1/bin/mvn" clean install'
           
