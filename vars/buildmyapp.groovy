@@ -3,7 +3,10 @@ def call(props){
 
     node{
       stage("call method"){
-          println "Sample stage from shared library $props.buidVersion "
+          println "Sample stage from shared library, pritnting project version:  $props.buidVersion "
+          
+          println "Sample stage from shared library, pritnting project name: $props.myprojectName "
+          
       }
     }
 
